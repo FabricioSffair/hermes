@@ -7,13 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1912EB602832E51A009AF0E9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB5F2832E51A009AF0E9 /* HomeView.swift */; };
+		1912EB622832E522009AF0E9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB612832E522009AF0E9 /* HomeViewModel.swift */; };
+		1912EB682832F641009AF0E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB672832F641009AF0E9 /* Constants.swift */; };
+		1912EB6A2832F66F009AF0E9 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB692832F66F009AF0E9 /* Strings.swift */; };
+		1912EB6D2832F6E5009AF0E9 /* RepositoriesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB6C2832F6E5009AF0E9 /* RepositoriesProtocol.swift */; };
+		1912EB732832FB5F009AF0E9 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB722832FB5F009AF0E9 /* Images.swift */; };
 		D806B6B527C71F1C006F594D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = D806B6B427C71F1C006F594D /* Apollo */; };
 		D806B6B727C71F1C006F594D /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = D806B6B627C71F1C006F594D /* ApolloSQLite */; };
 		D84E7B1127C81B88000DEB5B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E7B1027C81B88000DEB5B /* MockData.swift */; };
 		D8F7604B27C724F900B1AB58 /* API+Abstractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7604A27C724F900B1AB58 /* API+Abstractions.swift */; };
 		D8F7604D27C7295500B1AB58 /* GraphQLClient+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7604C27C7295500B1AB58 /* GraphQLClient+Search.swift */; };
 		D8F7605127C72B1700B1AB58 /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7605027C72B1700B1AB58 /* ApolloClient.swift */; };
-		D8F7605327C72F1400B1AB58 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7605227C72F1400B1AB58 /* ViewModel.swift */; };
+		D8F7605327C72F1400B1AB58 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7605227C72F1400B1AB58 /* Repository.swift */; };
 		D8F7605527C737E400B1AB58 /* GraphQLClient+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7605427C737E400B1AB58 /* GraphQLClient+Mock.swift */; };
 		D9A10FA0216C4AFD007998EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A10F9F216C4AFD007998EC /* AppDelegate.swift */; };
 		D9A10FA2216C4AFD007998EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A10FA1216C4AFD007998EC /* ViewController.swift */; };
@@ -46,11 +52,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1912EB5F2832E51A009AF0E9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1912EB612832E522009AF0E9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1912EB672832F641009AF0E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1912EB692832F66F009AF0E9 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		1912EB6C2832F6E5009AF0E9 /* RepositoriesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesProtocol.swift; sourceTree = "<group>"; };
+		1912EB722832FB5F009AF0E9 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		D84E7B1027C81B88000DEB5B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		D8F7604A27C724F900B1AB58 /* API+Abstractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Abstractions.swift"; sourceTree = "<group>"; };
 		D8F7604C27C7295500B1AB58 /* GraphQLClient+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphQLClient+Search.swift"; sourceTree = "<group>"; };
 		D8F7605027C72B1700B1AB58 /* ApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClient.swift; sourceTree = "<group>"; };
-		D8F7605227C72F1400B1AB58 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D8F7605227C72F1400B1AB58 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		D8F7605427C737E400B1AB58 /* GraphQLClient+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphQLClient+Mock.swift"; sourceTree = "<group>"; };
 		D9A10F9C216C4AFD007998EC /* GithubGraphQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubGraphQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A10F9F216C4AFD007998EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +110,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1912EB5E2832E50E009AF0E9 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1912EB5F2832E51A009AF0E9 /* HomeView.swift */,
+				1912EB612832E522009AF0E9 /* HomeViewModel.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		1912EB6B2832F6D9009AF0E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D8F7605227C72F1400B1AB58 /* Repository.swift */,
+				1912EB6C2832F6E5009AF0E9 /* RepositoriesProtocol.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1912EB712832F76E009AF0E9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1912EB672832F641009AF0E9 /* Constants.swift */,
+				1912EB692832F66F009AF0E9 /* Strings.swift */,
+				1912EB722832FB5F009AF0E9 /* Images.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
 		D84E7B0F27C81B69000DEB5B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,14 +170,16 @@
 		D9A10F9E216C4AFD007998EC /* GithubGraphQL */ = {
 			isa = PBXGroup;
 			children = (
+				1912EB6B2832F6D9009AF0E9 /* Data */,
 				D9A10FCE216C4E71007998EC /* Networking */,
+				1912EB5E2832E50E009AF0E9 /* Screen */,
+				1912EB712832F76E009AF0E9 /* Utilities */,
 				D9A10F9F216C4AFD007998EC /* AppDelegate.swift */,
 				D9A10FA6216C4AFD007998EC /* Assets.xcassets */,
 				D9A10FAB216C4AFD007998EC /* Info.plist */,
 				D9A10FA8216C4AFD007998EC /* LaunchScreen.storyboard */,
 				D9A10FA3216C4AFD007998EC /* Main.storyboard */,
 				D9A10FA1216C4AFD007998EC /* ViewController.swift */,
-				D8F7605227C72F1400B1AB58 /* ViewModel.swift */,
 			);
 			path = GithubGraphQL;
 			sourceTree = "<group>";
@@ -345,14 +387,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1912EB602832E51A009AF0E9 /* HomeView.swift in Sources */,
 				D8F7604D27C7295500B1AB58 /* GraphQLClient+Search.swift in Sources */,
 				D9A10FA2216C4AFD007998EC /* ViewController.swift in Sources */,
+				1912EB622832E522009AF0E9 /* HomeViewModel.swift in Sources */,
 				D9A10FE8216C77CD007998EC /* GraphQLClient.swift in Sources */,
+				1912EB6D2832F6E5009AF0E9 /* RepositoriesProtocol.swift in Sources */,
 				D8F7605127C72B1700B1AB58 /* ApolloClient.swift in Sources */,
+				1912EB732832FB5F009AF0E9 /* Images.swift in Sources */,
 				D9C8E128216DBA11002A64FC /* API.swift in Sources */,
+				1912EB6A2832F66F009AF0E9 /* Strings.swift in Sources */,
 				D8F7604B27C724F900B1AB58 /* API+Abstractions.swift in Sources */,
-				D8F7605327C72F1400B1AB58 /* ViewModel.swift in Sources */,
+				D8F7605327C72F1400B1AB58 /* Repository.swift in Sources */,
 				D9A10FA0216C4AFD007998EC /* AppDelegate.swift in Sources */,
+				1912EB682832F641009AF0E9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
