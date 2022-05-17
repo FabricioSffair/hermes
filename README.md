@@ -1,5 +1,8 @@
 # Peek iOS Coding Challenge
 
+## Requirements
+Xcode 13.x
+
 ## View
 The app uses SwiftUI due to the fact that it's easy to create reusable components for scalability, also small apps can be built in a fast and simple way, taking this as an advantage for the time management to fit in the 4 hours. In the current application we have HomeView that uses a ViewModel from HomeViewModelObservable protocol to build the view accordingly and make the View layer without any business logic to fit in MVVM architecture. ViewBuilder for button to load again when an issue happens was created and a RepositoryCell so it can be reused. 
 
