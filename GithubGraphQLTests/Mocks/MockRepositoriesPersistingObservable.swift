@@ -17,7 +17,7 @@ final class MockRepositoriesPersistingObservable: RepositoriesPersistingObservab
     var repositoriesErrorPublisher: PassthroughSubject<Error?, Never> = .init()
     var repositoriesErrorResult: Error? = nil
     
-    func search(phrase: String) {
+    func search(phrase: String, refresh: Bool) {
         repositoriesErrorPublisher.send(repositoriesErrorResult)
         repositoriesPublishers.send(repositoriesSearchResult)
     }
