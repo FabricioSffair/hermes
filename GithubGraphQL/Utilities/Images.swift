@@ -12,5 +12,7 @@ enum Images {
     
     enum HomeView {
         static let refreshIcon = Image(systemName: "arrow.clockwise")
+        static let placeholder = Image(systemName: "photo.circle.fill")
+        static let stargazerIcon = Image(systemName: "eye.fill")
     }
 }

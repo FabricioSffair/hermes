@@ -9,7 +9,9 @@
 import SwiftUI
 
 protocol HomeViewModelObservable: ObservableObject {
-    func loadMore()
+    func loadMoreIfNeeded(_ index: Int)
+    func refresh()
+    var isLoading: Bool { get }
     var repos: [RepositoryDetails] { get }
     var error: String? { get }
 }
@@ -23,17 +25,27 @@ struct HomeView<ViewModel: HomeViewModelObservable>: View {
             VStack {
                 List {
                     ForEach(0..<viewModel.repos.count, id: \.self) { index in
-                        Text(viewModel.repos[index].name)
+                        let repo = viewModel.repos[index]
+                        RepositoryCell(
+                            name: repo.name,
+                            url: repo.url,
+                            imageURL: repo.owner.avatarUrl,
+                            owner: repo.owner.login,
+                            stargazer: repo.stargazers.totalCount
+                        )
                             .onAppear {
-                                if index == viewModel.repos.count - Constants.HomeView.loadMoreIndex {
-                                    viewModel.loadMore()
-                                }
+                                viewModel.loadMoreIfNeeded(index)
                             }
-                        
                     }
                     if let error = viewModel.error {
                         tryAgainButton(with: error)
                     }
+                    if viewModel.isLoading {
+                        ProgressView()
+                    }
+                }
+                .refreshableLists {
+                    viewModel.refresh()
                 }
                 .navigationTitle(Strings.HomeView.title)
             }
@@ -43,7 +55,7 @@ struct HomeView<ViewModel: HomeViewModelObservable>: View {
     @ViewBuilder
     func tryAgainButton(with text: String) -> some View {
         Button {
-            viewModel.loadMore()
+            viewModel.loadMoreIfNeeded(viewModel.repos.count)
         } label: {
             VStack {
                 Text(text)

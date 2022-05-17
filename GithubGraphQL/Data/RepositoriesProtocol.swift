@@ -9,11 +9,10 @@
 import Combine
 
 protocol RepositoriesPersistingObservable: RepositoriesFetching {
-    var client: GraphQLClient { get }
     var repositoriesPublishers: CurrentValueSubject<RepositorySearchResult?, Never> { get }
-    var repositoriesErrorPublisher: PassthroughSubject<Error, Never> { get }
+    var repositoriesErrorPublisher: PassthroughSubject<Error?, Never> { get }
 }
 
 protocol RepositoriesFetching {
-    func search(phrase: String)
+    func search(phrase: String, refresh: Bool)
 }

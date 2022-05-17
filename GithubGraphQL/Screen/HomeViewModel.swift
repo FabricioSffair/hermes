@@ -6,17 +6,6 @@
 //  Copyright © 2022 test. All rights reserved.
 //
 
-final class Dependencies: HomeDependencyInjectable {
-
-    static let shared: Dependencies = .init()
-
-    var repo: RepositoriesPersistingObservable = Repository()
-}
-
-protocol HomeDependencyInjectable {
-    var repo: RepositoriesPersistingObservable { get }
-}
-
 import Combine
 import Foundation
 
@@ -24,6 +13,7 @@ final class HomeViewModel: HomeViewModelObservable {
     
     @Published var repos: [RepositoryDetails] = []
     @Published var error: String?
+    @Published var isLoading = false
     
     private var repository: RepositoriesPersistingObservable
     private var subscribers: Set<AnyCancellable> = []
@@ -34,24 +24,43 @@ final class HomeViewModel: HomeViewModelObservable {
         repository.repositoriesPublishers
             .receive(on: DispatchQueue.main)
             .sink { searchResult in
+                self.isLoading = false
+                
                 guard let result = searchResult else { return }
                 self.error = nil
                 self.repos += result.repos
                 self.hasMore = result.pageInfo.hasNextPage
             }
             .store(in: &subscribers)
+        
         repository.repositoriesErrorPublisher
             .receive(on: DispatchQueue.main)
-            .sink { _ in
-                self.error = Strings.HomeView.defaultError
+            .sink { error in
+                self.isLoading = false
+                self.error = error?.localizedDescription
+                guard error == nil else {
+                    self.error = Strings.HomeView.defaultError
+                    return
+                }
             }
             .store(in: &subscribers)
-        loadMore()
+        search()
     }
     
-    func loadMore() {
+    func loadMoreIfNeeded(_ index: Int) {
         guard hasMore else { return }
-        repository.search(phrase: Strings.HomeView.searchTerm)
+        guard index >= repos.count - Constants.HomeView.loadMoreIndex else { return }
+        search()
+    }
+    
+    func refresh() {
+        repos = []
+        search(refresh: true)
+    }
+    
+    func search(refresh: Bool = false) {
+        self.isLoading = true
+        repository.search(phrase: Strings.HomeView.searchTerm, refresh: refresh)
     }
     
 }
