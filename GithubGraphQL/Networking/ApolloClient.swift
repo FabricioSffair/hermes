@@ -2,8 +2,7 @@ import Apollo
 import ApolloSQLite
 import Foundation
 
-#error("Replace this API_KEY placeholder with your own GitHub Personal Access Token")
-private let kGitHubBearerToken = "API_KEY"
+private let kGitHubBearerToken = "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"
 private let kGitHubURLPath = "https://api.github.com/graphql"
 
 
@@ -20,7 +19,6 @@ private var sharedClient = ApolloClient(
 extension ApolloClient {
   static var shared: ApolloClient { sharedClient }
 }
-
 // MARK: - Helpers
 
 extension NormalizedCache where Self == SQLiteNormalizedCache {

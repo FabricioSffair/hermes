@@ -7,13 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1912EB602832E51A009AF0E9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB5F2832E51A009AF0E9 /* HomeView.swift */; };
+		1912EB622832E522009AF0E9 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB612832E522009AF0E9 /* HomeViewModel.swift */; };
+		1912EB682832F641009AF0E9 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB672832F641009AF0E9 /* Constants.swift */; };
+		1912EB6A2832F66F009AF0E9 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB692832F66F009AF0E9 /* Strings.swift */; };
+		1912EB6D2832F6E5009AF0E9 /* RepositoriesProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB6C2832F6E5009AF0E9 /* RepositoriesProtocol.swift */; };
+		1912EB732832FB5F009AF0E9 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB722832FB5F009AF0E9 /* Images.swift */; };
+		1912EB752832FE8B009AF0E9 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB742832FE8B009AF0E9 /* HomeViewModelTests.swift */; };
+		1912EB782832FEED009AF0E9 /* MockHomeDependencyInjectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB772832FEED009AF0E9 /* MockHomeDependencyInjectable.swift */; };
+		1912EB7A2832FF5C009AF0E9 /* MockRepositoriesPersistingObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB792832FF5C009AF0E9 /* MockRepositoriesPersistingObservable.swift */; };
+		1912EB7C2833C5ED009AF0E9 /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB7B2833C5ED009AF0E9 /* RepositoryCell.swift */; };
+		1912EB7F2833C859009AF0E9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 1912EB7E2833C859009AF0E9 /* Kingfisher */; };
+		1912EB812833D12A009AF0E9 /* Modifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB802833D12A009AF0E9 /* Modifiers.swift */; };
+		1912EB832833D99B009AF0E9 /* Dependenies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1912EB822833D99B009AF0E9 /* Dependenies.swift */; };
 		D806B6B527C71F1C006F594D /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = D806B6B427C71F1C006F594D /* Apollo */; };
 		D806B6B727C71F1C006F594D /* ApolloSQLite in Frameworks */ = {isa = PBXBuildFile; productRef = D806B6B627C71F1C006F594D /* ApolloSQLite */; };
 		D84E7B1127C81B88000DEB5B /* MockData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D84E7B1027C81B88000DEB5B /* MockData.swift */; };
 		D8F7604B27C724F900B1AB58 /* API+Abstractions.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7604A27C724F900B1AB58 /* API+Abstractions.swift */; };
 		D8F7604D27C7295500B1AB58 /* GraphQLClient+Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7604C27C7295500B1AB58 /* GraphQLClient+Search.swift */; };
 		D8F7605127C72B1700B1AB58 /* ApolloClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7605027C72B1700B1AB58 /* ApolloClient.swift */; };
-		D8F7605327C72F1400B1AB58 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7605227C72F1400B1AB58 /* ViewModel.swift */; };
+		D8F7605327C72F1400B1AB58 /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7605227C72F1400B1AB58 /* Repository.swift */; };
 		D8F7605527C737E400B1AB58 /* GraphQLClient+Mock.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F7605427C737E400B1AB58 /* GraphQLClient+Mock.swift */; };
 		D9A10FA0216C4AFD007998EC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A10F9F216C4AFD007998EC /* AppDelegate.swift */; };
 		D9A10FA2216C4AFD007998EC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9A10FA1216C4AFD007998EC /* ViewController.swift */; };
@@ -46,11 +59,23 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1912EB5F2832E51A009AF0E9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1912EB612832E522009AF0E9 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		1912EB672832F641009AF0E9 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		1912EB692832F66F009AF0E9 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		1912EB6C2832F6E5009AF0E9 /* RepositoriesProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesProtocol.swift; sourceTree = "<group>"; };
+		1912EB722832FB5F009AF0E9 /* Images.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		1912EB742832FE8B009AF0E9 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		1912EB772832FEED009AF0E9 /* MockHomeDependencyInjectable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHomeDependencyInjectable.swift; sourceTree = "<group>"; };
+		1912EB792832FF5C009AF0E9 /* MockRepositoriesPersistingObservable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepositoriesPersistingObservable.swift; sourceTree = "<group>"; };
+		1912EB7B2833C5ED009AF0E9 /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		1912EB802833D12A009AF0E9 /* Modifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modifiers.swift; sourceTree = "<group>"; };
+		1912EB822833D99B009AF0E9 /* Dependenies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependenies.swift; sourceTree = "<group>"; };
 		D84E7B1027C81B88000DEB5B /* MockData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockData.swift; sourceTree = "<group>"; };
 		D8F7604A27C724F900B1AB58 /* API+Abstractions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "API+Abstractions.swift"; sourceTree = "<group>"; };
 		D8F7604C27C7295500B1AB58 /* GraphQLClient+Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphQLClient+Search.swift"; sourceTree = "<group>"; };
 		D8F7605027C72B1700B1AB58 /* ApolloClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApolloClient.swift; sourceTree = "<group>"; };
-		D8F7605227C72F1400B1AB58 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		D8F7605227C72F1400B1AB58 /* Repository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
 		D8F7605427C737E400B1AB58 /* GraphQLClient+Mock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GraphQLClient+Mock.swift"; sourceTree = "<group>"; };
 		D9A10F9C216C4AFD007998EC /* GithubGraphQL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GithubGraphQL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D9A10F9F216C4AFD007998EC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1912EB7F2833C859009AF0E9 /* Kingfisher in Frameworks */,
 				D806B6B527C71F1C006F594D /* Apollo in Frameworks */,
 				D806B6B727C71F1C006F594D /* ApolloSQLite in Frameworks */,
 			);
@@ -98,6 +124,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1912EB5E2832E50E009AF0E9 /* Screen */ = {
+			isa = PBXGroup;
+			children = (
+				1912EB5F2832E51A009AF0E9 /* HomeView.swift */,
+				1912EB612832E522009AF0E9 /* HomeViewModel.swift */,
+				1912EB7B2833C5ED009AF0E9 /* RepositoryCell.swift */,
+			);
+			path = Screen;
+			sourceTree = "<group>";
+		};
+		1912EB6B2832F6D9009AF0E9 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D8F7605227C72F1400B1AB58 /* Repository.swift */,
+				1912EB6C2832F6E5009AF0E9 /* RepositoriesProtocol.swift */,
+				1912EB822833D99B009AF0E9 /* Dependenies.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		1912EB712832F76E009AF0E9 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1912EB672832F641009AF0E9 /* Constants.swift */,
+				1912EB692832F66F009AF0E9 /* Strings.swift */,
+				1912EB722832FB5F009AF0E9 /* Images.swift */,
+				1912EB802833D12A009AF0E9 /* Modifiers.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1912EB762832FEDD009AF0E9 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				1912EB772832FEED009AF0E9 /* MockHomeDependencyInjectable.swift */,
+				1912EB792832FF5C009AF0E9 /* MockRepositoriesPersistingObservable.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		D84E7B0F27C81B69000DEB5B /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -130,14 +196,16 @@
 		D9A10F9E216C4AFD007998EC /* GithubGraphQL */ = {
 			isa = PBXGroup;
 			children = (
+				1912EB6B2832F6D9009AF0E9 /* Data */,
 				D9A10FCE216C4E71007998EC /* Networking */,
+				1912EB5E2832E50E009AF0E9 /* Screen */,
+				1912EB712832F76E009AF0E9 /* Utilities */,
 				D9A10F9F216C4AFD007998EC /* AppDelegate.swift */,
 				D9A10FA6216C4AFD007998EC /* Assets.xcassets */,
 				D9A10FAB216C4AFD007998EC /* Info.plist */,
 				D9A10FA8216C4AFD007998EC /* LaunchScreen.storyboard */,
 				D9A10FA3216C4AFD007998EC /* Main.storyboard */,
 				D9A10FA1216C4AFD007998EC /* ViewController.swift */,
-				D8F7605227C72F1400B1AB58 /* ViewModel.swift */,
 			);
 			path = GithubGraphQL;
 			sourceTree = "<group>";
@@ -145,9 +213,11 @@
 		D9A10FB3216C4AFE007998EC /* GithubGraphQLTests */ = {
 			isa = PBXGroup;
 			children = (
+				1912EB762832FEDD009AF0E9 /* Mocks */,
 				D84E7B0F27C81B69000DEB5B /* Helpers */,
 				D9A10FB4216C4AFE007998EC /* GithubGraphQLTests.swift */,
 				D9A10FB6216C4AFE007998EC /* Info.plist */,
+				1912EB742832FE8B009AF0E9 /* HomeViewModelTests.swift */,
 			);
 			path = GithubGraphQLTests;
 			sourceTree = "<group>";
@@ -203,6 +273,7 @@
 			packageProductDependencies = (
 				D806B6B427C71F1C006F594D /* Apollo */,
 				D806B6B627C71F1C006F594D /* ApolloSQLite */,
+				1912EB7E2833C859009AF0E9 /* Kingfisher */,
 			);
 			productName = GithubGraphQL;
 			productReference = D9A10F9C216C4AFD007998EC /* GithubGraphQL.app */;
@@ -278,6 +349,7 @@
 			mainGroup = D9A10F93216C4AFD007998EC;
 			packageReferences = (
 				D806B6B327C71F1C006F594D /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				1912EB7D2833C858009AF0E9 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = D9A10F9D216C4AFD007998EC /* Products */;
 			projectDirPath = "";
@@ -345,14 +417,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1912EB832833D99B009AF0E9 /* Dependenies.swift in Sources */,
+				1912EB7C2833C5ED009AF0E9 /* RepositoryCell.swift in Sources */,
+				1912EB602832E51A009AF0E9 /* HomeView.swift in Sources */,
 				D8F7604D27C7295500B1AB58 /* GraphQLClient+Search.swift in Sources */,
 				D9A10FA2216C4AFD007998EC /* ViewController.swift in Sources */,
+				1912EB622832E522009AF0E9 /* HomeViewModel.swift in Sources */,
 				D9A10FE8216C77CD007998EC /* GraphQLClient.swift in Sources */,
+				1912EB6D2832F6E5009AF0E9 /* RepositoriesProtocol.swift in Sources */,
 				D8F7605127C72B1700B1AB58 /* ApolloClient.swift in Sources */,
+				1912EB732832FB5F009AF0E9 /* Images.swift in Sources */,
 				D9C8E128216DBA11002A64FC /* API.swift in Sources */,
+				1912EB6A2832F66F009AF0E9 /* Strings.swift in Sources */,
 				D8F7604B27C724F900B1AB58 /* API+Abstractions.swift in Sources */,
-				D8F7605327C72F1400B1AB58 /* ViewModel.swift in Sources */,
+				1912EB812833D12A009AF0E9 /* Modifiers.swift in Sources */,
+				D8F7605327C72F1400B1AB58 /* Repository.swift in Sources */,
 				D9A10FA0216C4AFD007998EC /* AppDelegate.swift in Sources */,
+				1912EB682832F641009AF0E9 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -360,9 +441,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1912EB7A2832FF5C009AF0E9 /* MockRepositoriesPersistingObservable.swift in Sources */,
+				1912EB782832FEED009AF0E9 /* MockHomeDependencyInjectable.swift in Sources */,
 				D84E7B1127C81B88000DEB5B /* MockData.swift in Sources */,
 				D8F7605527C737E400B1AB58 /* GraphQLClient+Mock.swift in Sources */,
 				D9A10FB5216C4AFE007998EC /* GithubGraphQLTests.swift in Sources */,
+				1912EB752832FE8B009AF0E9 /* HomeViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -683,6 +767,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1912EB7D2833C858009AF0E9 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
 		D806B6B327C71F1C006F594D /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apollographql/apollo-ios";
@@ -694,6 +786,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1912EB7E2833C859009AF0E9 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1912EB7D2833C858009AF0E9 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		D806B6B427C71F1C006F594D /* Apollo */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = D806B6B327C71F1C006F594D /* XCRemoteSwiftPackageReference "apollo-ios" */;
