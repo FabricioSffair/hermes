@@ -13,6 +13,9 @@ A HomeViewModelDependencyInjectable is required with a repository to instantiate
 ## Repository
 A layer to fetch the data from client or local. This layer was created to remove the logic of fetching data and checking it results. The reason to create this is to make the app even more scalable for a possible persistence layer, by having a localPersisting protocol where methods to cache the results in case the user loses network access.
 
+## Dependencies
+The app contains one extra framework as dependency, which is KingFisher. The decision made was because of the little amount of time, a high quality image loader with caching would be difficult to be implemented, so Kingfisher does the job perfectly, has support for SwiftUI and it's an old framework that has been maintained for a really good time now.  
+
 ## Unit tests
 As a matter of time, only a small portion of the app contains unit tests, which is the HomeViewModel. There are currently two tests, one for search successful and another one for search error. Additional tests such as checking if loadMore is necessary and the refresh can be easily implemented as well as testing the repository layer.
 
